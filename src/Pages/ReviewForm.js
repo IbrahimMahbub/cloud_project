@@ -36,7 +36,7 @@ const CustomerReviewForm = ({onRouteChange}) => {
             required
           />
         </div>
-        <button onClick={() => onRouteChange('init')} type="submit">Submit Review</button>
+        <button onClick={() => onRouteChange('')} type="submit">Submit Review</button>
       </form>
       <div>
       <p onClick={() => onRouteChange('cust')}><u> Log out!</u> </p>

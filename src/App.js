@@ -41,10 +41,18 @@ class App extends Component {
         );
         
 
-      } else {
+      } else if (this.state.route === 'init' ){ 
+        return(
+          <div className='App'>
+        <SupportFeedbackForm onRouteChange={this.onRouteChange} />
+        </div>
+        );   
+
+      }
+       else {
         return (
           <div className='App'>
-            <SupportFeedbackForm onRouteChange={this.onRouteChange} />
+            <h1>Thank You so much for using our service</h1>
           </div>
 
         );

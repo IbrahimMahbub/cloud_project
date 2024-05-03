@@ -23,7 +23,7 @@ const SupportFeedbackForm = ({onRouteChange}) => {
             required
           />
         </div>
-        <button type="submit">Submit Feedback</button>
+        <button onClick={() => onRouteChange('')}  type="submit">Submit Feedback</button>
       </form>
       <div>
       <p onClick={() => onRouteChange('CusSup')}><u> Log out!</u> </p>

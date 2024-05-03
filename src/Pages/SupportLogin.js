@@ -36,7 +36,7 @@ const LoginSupport = ({onRouteChange}) => {
             required
           />
         </div>
-        <button type="submit">Login</button>
+        <button onClick={() => onRouteChange('init')} type="submit">Login</button>
       </form>
       <p onClick={() => onRouteChange('cust')}>Are you a Customer? <u> Login here!</u> </p>
     </div>
